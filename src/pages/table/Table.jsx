@@ -1,7 +1,12 @@
 import React from "react";
+import Navigation from "../../components/navigation/Navigation";
 
 const Table = () => {
-  return <div>Table</div>;
+  return (
+    <>
+      <Navigation></Navigation>
+    </>
+  );
 };
 
 export default Table;

@@ -1,0 +1,36 @@
+.navigation {
+  height: 70px;
+  background-color: blue;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 2;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0;
+}
+
+.navigation__list {
+  flex: 10;
+  list-style: none;
+  display: flex;
+}
+
+.navigation__item {
+  margin-left: 20px;
+}
+
+.navigation__link {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
