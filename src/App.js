@@ -1,4 +1,3 @@
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./pages/main/Main.jsx";
 import Dictation from "./pages/dictation/Dictation";
@@ -13,6 +12,7 @@ function App() {
         <Route path="numbers" element={<Numbers />}></Route>
         <Route path="pictures" element={<Pictures />}></Route>
         <Route path="dictation" element={<Dictation />}></Route>
+        <Route path="*" element={<Main />}></Route>
       </Routes>
     </BrowserRouter>
   );
