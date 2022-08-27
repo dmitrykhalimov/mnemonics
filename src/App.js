@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./pages/main/Main.jsx";
 import Dictation from "./pages/dictation/Dictation";
-import Numbers from "./pages/numbers/Numbers";
+import Table from "./pages/table/Table";
 import Pictures from "./pages/pictures/Pictures";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Main />}></Route>
-        <Route path="numbers" element={<Numbers />}></Route>
+        <Route path="table" element={<Table />}></Route>
         <Route path="pictures" element={<Pictures />}></Route>
         <Route path="dictation" element={<Dictation />}></Route>
         <Route path="*" element={<Main />}></Route>

@@ -1,8 +1,37 @@
-.container {
+.menu__container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.menu__heading {
+  font-family: "Lato", sans-serif;
+  font-size: 42px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.menu__nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu__nav-button {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  background-color: rgb(61, 168, 244);
+  color: white;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+
+  margin-bottom: 20px;
+
+  font-size: 26px;
 
   &:hover {
-    color: red;
+    opacity: 0.9;
   }
 }
