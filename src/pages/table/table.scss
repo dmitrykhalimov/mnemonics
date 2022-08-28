@@ -1,0 +1,15 @@
+.table__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.table__field {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px 300px 300px;
+  flex-wrap: wrap;
+  // align-items: flex-start;
+  gap: 5px;
+
+  height: 100vh;
+}
