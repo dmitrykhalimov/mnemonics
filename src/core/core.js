@@ -9,7 +9,11 @@ const getCardFromArray = (number) => {
 
 const getRandomCard = () => {
   const randomCardNumber = getRandomInt(1, 20);
-  return getCardFromArray(randomCardNumber);
+  const randomCard = getCardFromArray(randomCardNumber);
+  if (!randomCard) {
+    console.log(randomCardNumber);
+  }
+  return randomCard;
 };
 
 export { getRandomCard };

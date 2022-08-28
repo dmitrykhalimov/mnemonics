@@ -3,8 +3,13 @@ import "./dictationField.scss";
 import Card from "../card/Card";
 import { getRandomCard } from "../../core/core";
 
-const DictationField = () => {
+const DictationField = (props) => {
+  const { isNumberFirst } = props;
   const [currentCard, setCurrentCard] = useState(getRandomCard());
+
+  const nextCard = () => {
+    setCurrentCard(getRandomCard);
+  };
 
   return (
     <div className="dictationField">
@@ -15,7 +20,11 @@ const DictationField = () => {
           picture={currentCard.picture}
           description={currentCard.description}
           isDictation={true}
+          isNumberFirst={isNumberFirst}
         />
+        <button onClick={nextCard} className="dictationField__button">
+          Следующая карточка
+        </button>
       </div>
     </div>
   );

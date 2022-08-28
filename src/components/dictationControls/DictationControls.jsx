@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./dictationControls.scss";
 
-const DictationControls = () => {
+const DictationControls = (props) => {
+  const { changeDictationType } = props;
+  const [selectorType, setSelectorType] = useState("numbers");
+
+  const handleChangeType = (evt) => {
+    setSelectorType(evt.target.id);
+    changeDictationType(evt.target.id !== "numbers");
+  };
+
   return (
     <div className="dictationContorls">
       <div className="dictationControls__conatiner">
@@ -13,7 +21,8 @@ const DictationControls = () => {
               type="radio"
               id="numbers"
               name="type"
-              checked
+              checked={selectorType === "numbers"}
+              onChange={handleChangeType}
             />
             <label htmlFor="numbers">Цифры</label>
             <input
@@ -21,6 +30,8 @@ const DictationControls = () => {
               type="radio"
               id="pictures"
               name="type"
+              checked={selectorType === "pictures"}
+              onChange={handleChangeType}
             />
             <label htmlFor="pictures">Картинки</label>
           </div>

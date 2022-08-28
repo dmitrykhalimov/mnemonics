@@ -15,7 +15,7 @@ const CardsData = [
     description: "Ухо",
   },
   {
-    id: 1,
+    id: 4,
     picture: "4.jpg",
     description: "Чай",
   },

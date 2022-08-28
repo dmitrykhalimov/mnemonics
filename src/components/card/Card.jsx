@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import "./card.scss";
 
 const Card = (props) => {
-  const { number, description, picture, isDictation = false } = props;
-  const [cardSide, setCardSide] = useState(false);
+  const {
+    number,
+    description,
+    picture,
+    isDictation = false,
+    isNumberFirst = false,
+  } = props;
+  const [cardSide, setCardSide] = useState(isNumberFirst);
 
   const NumberSide = () => {
     return (
