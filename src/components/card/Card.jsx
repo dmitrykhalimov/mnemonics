@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./card.scss";
 
 const Card = (props) => {
-  const { number } = props;
+  const { number, description, picture } = props;
   const [cardSide, setCardSide] = useState(false);
 
   const NumberSide = () => {
@@ -16,8 +16,8 @@ const Card = (props) => {
   const ImageSide = () => {
     return (
       <div className="card__inner card__inner--image">
-        <img src="/assets/1.jpeg" alt="" />
-        <span>Грейпрфут</span>
+        <img src={`assets/${picture}`} alt={description} />
+        <span>{description}</span>
       </div>
     );
   };

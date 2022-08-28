@@ -15,7 +15,14 @@ const Table = () => {
           <div className="table__controls"></div>
           <div className="table__field">
             {CardsData.map((cardData) => {
-              return <Card key={cardData.id} number={cardData.id} />;
+              return (
+                <Card
+                  key={cardData.id}
+                  number={cardData.id}
+                  picture={cardData.picture}
+                  description={cardData.description}
+                />
+              );
             })}
           </div>
         </div>
