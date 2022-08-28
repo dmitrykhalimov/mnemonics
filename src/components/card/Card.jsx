@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./card.scss";
 
 const Card = (props) => {
-  const { number, description, picture } = props;
+  const { number, description, picture, isDictation = false } = props;
   const [cardSide, setCardSide] = useState(false);
 
   const NumberSide = () => {
@@ -28,7 +28,10 @@ const Card = (props) => {
   };
 
   return (
-    <div onClick={toggleSide} className="card">
+    <div
+      onClick={toggleSide}
+      className={`card${isDictation ? " card--dictation" : ""}`}
+    >
       {cardSide ? <ImageSide /> : <NumberSide />}
     </div>
   );
