@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "../../components/navigation/Navigation";
+import Pagintation from "../../components/pagination/Pagintation";
 import "./table.scss";
 
 import CardsData from "../../core/cards";
@@ -12,7 +13,7 @@ const Table = () => {
       <section className="table">
         <div className="table__container">
           <h1>Таблица карточек</h1>
-          <div className="table__controls"></div>
+          <Pagintation></Pagintation>
           <div className="table__field">
             {CardsData.map((cardData) => {
               return (

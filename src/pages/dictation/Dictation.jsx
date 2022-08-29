@@ -9,7 +9,7 @@ const Dictation = () => {
 
   const changeDictationType = () => {
     setIsNumberFirst(!isNumberFirst);
-    console.log("А где ререндер?");
+    // хз чего оно не ререндерится
   };
 
   return (

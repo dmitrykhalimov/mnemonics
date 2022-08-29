@@ -1,0 +1,16 @@
+.pagination {
+  margin-bottom: 20px;
+}
+
+.pagination__button {
+  background-color: transparent;
+  border: 2px solid blue;
+  font-size: 35px;
+  margin-right: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: deepskyblue;
+  }
+}

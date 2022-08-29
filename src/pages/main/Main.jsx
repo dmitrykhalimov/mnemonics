@@ -10,10 +10,10 @@ const Main = () => {
         <h1 className="menu__heading">Тренажер цифровых выражений</h1>
 
         <nav className="menu__nav">
-          <Link className="menu__nav-button" to="table">
+          <Link className="menu__nav-button" to="/table">
             Таблица
           </Link>
-          <Link className="menu__nav-button" to="dictation">
+          <Link className="menu__nav-button" to="/dictation">
             Диктант
           </Link>
         </nav>
