@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "../../components/navigation/Navigation";
 import Pagintation from "../../components/pagination/Pagintation";
 import "./table.scss";
 
-import CardsData from "../../core/cards";
+// import CardsData from "../../core/cards";
+import { getCardsRange } from "../../core/core";
 import Card from "../../components/card/Card";
 
 const Table = () => {
+  const [cards, setCards] = useState(getCardsRange(0, 19));
+
+  const selectCardsRange = (minRange, maxRange) => {
+    setCards(getCardsRange(minRange, maxRange));
+  };
+
   return (
     <>
       <Navigation></Navigation>
       <section className="table">
         <div className="table__container">
           <h1>Таблица карточек</h1>
-          <Pagintation></Pagintation>
+          <Pagintation selectCardsRange={selectCardsRange}></Pagintation>
           <div className="table__field">
-            {CardsData.map((cardData) => {
+            {cards.map((cardData) => {
               return (
                 <Card
                   key={cardData.id}

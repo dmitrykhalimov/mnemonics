@@ -7,6 +7,10 @@ const getCardFromArray = (number) => {
   });
 };
 
+const getCardsRange = (start, end) => {
+  return CardsData.slice(start, end + 1);
+};
+
 const getRandomCard = () => {
   const randomCardNumber = getRandomInt(1, 20);
   const randomCard = getCardFromArray(randomCardNumber);
@@ -16,4 +20,4 @@ const getRandomCard = () => {
   return randomCard;
 };
 
-export { getRandomCard };
+export { getRandomCard, getCardsRange };
