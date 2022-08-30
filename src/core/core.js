@@ -11,8 +11,8 @@ const getCardsRange = (start, end) => {
   return CardsData.slice(start, end + 1);
 };
 
-const getRandomCard = () => {
-  const randomCardNumber = getRandomInt(1, 20);
+const getRandomCard = (min, max) => {
+  const randomCardNumber = getRandomInt(min, max);
   const randomCard = getCardFromArray(randomCardNumber);
   if (!randomCard) {
     console.log(randomCardNumber);

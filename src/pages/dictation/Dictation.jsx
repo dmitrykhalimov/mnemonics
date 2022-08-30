@@ -6,6 +6,16 @@ import "./dictation.scss";
 
 const Dictation = () => {
   const [isNumberFirst, setIsNumberFirst] = useState(false);
+  const [minRange, setMinRange] = useState(0);
+  const [maxRange, setMaxRange] = useState(19);
+
+  const handleChangeMinRange = (min) => {
+    setMinRange(Number(min));
+  };
+
+  const handleChangeMaxRange = (max) => {
+    setMaxRange(Number(max));
+  };
 
   const changeDictationType = () => {
     setIsNumberFirst(!isNumberFirst);
@@ -16,8 +26,18 @@ const Dictation = () => {
     <>
       <Navigation></Navigation>
       <section className="dictation">
-        <DictationControls changeDictationType={changeDictationType} />
-        <DictationField isNumberFirst={isNumberFirst} />
+        <DictationControls
+          onChangeMinRange={handleChangeMinRange}
+          onChangeMaxRange={handleChangeMaxRange}
+          minRange={minRange}
+          maxRange={maxRange}
+          changeDictationType={changeDictationType}
+        />
+        <DictationField
+          minRange={minRange}
+          maxRange={maxRange}
+          isNumberFirst={isNumberFirst}
+        />
       </section>
     </>
   );

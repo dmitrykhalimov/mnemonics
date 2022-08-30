@@ -2,13 +2,30 @@ import React, { useState } from "react";
 import "./dictationControls.scss";
 
 const DictationControls = (props) => {
-  const { changeDictationType } = props;
+  const {
+    changeDictationType,
+    minRange,
+    maxRange,
+    onChangeMinRange,
+    onChangeMaxRange,
+  } = props;
+
   const [selectorType, setSelectorType] = useState("numbers");
 
   const handleChangeType = (evt) => {
     setSelectorType(evt.target.id);
     changeDictationType(evt.target.id !== "numbers");
   };
+
+  const handleChangeMinRange = (evt) => {
+    onChangeMinRange(evt.target.value);
+  };
+
+  const handleChangeMaxRange = (evt) => {
+    onChangeMaxRange(evt.target.value);
+  };
+
+  // const
 
   return (
     <div className="dictationContorls">
@@ -36,26 +53,26 @@ const DictationControls = (props) => {
             <label htmlFor="pictures">Картинки</label>
           </div>
         </div>
-        {/* <div className="dictationControls__wrapper">
-          <p className="dictationControls__title">Тип диканта</p>
-          <div className="dictationControls__type">
+        <div className="dictationControls__wrapper">
+          <div className="dictationControls__range">
+            <label htmlFor="minrange">Начало</label>
             <input
-              className="visually-hidden"
-              type="radio"
-              id="numbers"
-              name="type"
-              checked
+              type="number"
+              name="minrange"
+              id="minrange"
+              onChange={handleChangeMinRange}
+              value={minRange}
             />
-            <label htmlFor="numbers">Цифры</label>
+            <label htmlFor="minrange">Конец</label>
             <input
-              className="visually-hidden"
-              type="radio"
-              id="pictures"
-              name="type"
+              type="number"
+              name="maxrange"
+              id="maxrange"
+              onChange={handleChangeMaxRange}
+              value={maxRange}
             />
-            <label htmlFor="pictures">Картинки</label>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

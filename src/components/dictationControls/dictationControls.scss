@@ -4,8 +4,10 @@
 
   display: flex;
   padding-top: 20px;
+  justify-content: space-between;
 
   min-height: 50px;
+  gap: 30px;
 }
 
 .dictationControls__wrapper {
@@ -18,7 +20,10 @@
   }
 
   label {
+    display: inline-flex;
+    align-items: center;
     padding: 10px;
+    height: 25px;
     color: white;
     background-color: rgb(129, 196, 238);
   }
@@ -29,4 +34,24 @@
   font-size: 22px;
   margin: 0;
   margin-right: 20px;
+}
+
+.dictationControls__range {
+  input {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    height: 25px;
+
+    width: 50px;
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+  label {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 22px;
+  }
 }

@@ -4,11 +4,11 @@ import Card from "../card/Card";
 import { getRandomCard } from "../../core/core";
 
 const DictationField = (props) => {
-  const { isNumberFirst } = props;
+  const { isNumberFirst, minRange, maxRange } = props;
   const [currentCard, setCurrentCard] = useState(getRandomCard());
 
   const nextCard = () => {
-    setCurrentCard(getRandomCard);
+    setCurrentCard(getRandomCard(minRange, maxRange));
   };
 
   return (
