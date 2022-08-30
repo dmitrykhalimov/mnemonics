@@ -4,10 +4,13 @@ import DictationControls from "../../components/dictationControls/DictationContr
 import DictationField from "../../components/dictationField/DictationField";
 import "./dictation.scss";
 
+const DEFALUT_MIN = 0;
+const DEFAULT_MAX = 19;
+
 const Dictation = () => {
   const [isNumberFirst, setIsNumberFirst] = useState(false);
-  const [minRange, setMinRange] = useState(0);
-  const [maxRange, setMaxRange] = useState(19);
+  const [minRange, setMinRange] = useState(DEFALUT_MIN);
+  const [maxRange, setMaxRange] = useState(DEFAULT_MAX);
 
   const handleChangeMinRange = (min) => {
     setMinRange(Number(min));
