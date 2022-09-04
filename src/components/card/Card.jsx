@@ -23,6 +23,7 @@ const Card = (props) => {
     return (
       <div className="card__inner card__inner--image">
         <img src={`assets/${picture}`} alt={description} />
+        <span className="card__number">{number}</span>
         <span>{description}</span>
       </div>
     );
