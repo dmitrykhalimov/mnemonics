@@ -16,6 +16,9 @@ const Main = () => {
           <Link className="menu__nav-button" to="/dictation">
             Диктант
           </Link>
+          <Link className="menu__nav-button" to="/examination">
+            Экзамен
+          </Link>
         </nav>
       </div>
     </section>
