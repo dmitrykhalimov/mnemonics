@@ -22,6 +22,11 @@ const Navigation = () => {
             Диктант
           </Link>
         </li>
+        <li className="navigation__item">
+          <Link className="navigation__link" to="../examination">
+            Экзамен
+          </Link>
+        </li>
       </ul>
     </nav>
   );

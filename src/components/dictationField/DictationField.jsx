@@ -3,8 +3,6 @@ import "./dictationField.scss";
 import Card from "../card/Card";
 import { getRandomCard } from "../../core/core";
 
-const DEFALUT_MIN = 0;
-const DEFAULT_MAX = 19;
 
 const DictationField = (props) => {
   const { isNumberFirst, minRange, maxRange } = props;
