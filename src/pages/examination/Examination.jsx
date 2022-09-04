@@ -15,10 +15,8 @@ const Table = () => {
 
   return (
     <>
-      <Navigation></Navigation>
       <section className="examination">
         <div className="examination__container">
-          <h1>Таблица карточек</h1>
           <div className="examination__field">
             {cards.map((cardData) => {
               return (
