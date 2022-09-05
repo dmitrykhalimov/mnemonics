@@ -7,7 +7,7 @@ import { getCardsRange } from "../../core/core";
 import CardMini from "../../components/cardMini/CardMini";
 
 const Table = () => {
-  const [cards, setCards] = useState(getCardsRange(0, 99));
+  const [cards, setCards] = useState(getCardsRange(0, 100));
 
   const selectCardsRange = (minRange, maxRange) => {
     setCards(getCardsRange(minRange, maxRange));
