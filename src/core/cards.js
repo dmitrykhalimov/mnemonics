@@ -201,7 +201,7 @@ const CardsData = [
   },
   {
     id: 40,
-    picture: "40.jpg",
+    picture: "40.webp",
     description: "ЧайНик",
   },
   {
@@ -221,7 +221,7 @@ const CardsData = [
   },
   {
     id: 44,
-    picture: "44.jpg",
+    picture: "44.png",
     description: "ЧуЧело",
   },
   {
@@ -236,7 +236,7 @@ const CardsData = [
   },
   {
     id: 47,
-    picture: "47.jpg",
+    picture: "47.webp",
     description: "ЧаСы",
   },
   {
@@ -246,17 +246,17 @@ const CardsData = [
   },
   {
     id: 49,
-    picture: "49.jpg",
+    picture: "49.png",
     description: "ЧеРеп",
   },
   {
     id: 50,
-    picture: "50.jpg",
+    picture: "50.png",
     description: "БаяН",
   },
   {
     id: 51,
-    picture: "51.png",
+    picture: "51.jpg",
     description: "ПоГоны",
   },
   {
@@ -266,7 +266,7 @@ const CardsData = [
   },
   {
     id: 53,
-    picture: "53.jpg",
+    picture: "53.png",
     description: "ПауК",
   },
   {
@@ -286,7 +286,7 @@ const CardsData = [
   },
   {
     id: 57,
-    picture: "57.jpg",
+    picture: "57.webp",
     description: "БуСы",
   },
   {
@@ -296,7 +296,7 @@ const CardsData = [
   },
   {
     id: 59,
-    picture: "59.png",
+    picture: "59.jpg",
     description: "ПеРо",
   },
   {
@@ -306,7 +306,7 @@ const CardsData = [
   },
   {
     id: 61,
-    picture: "61.jpg",
+    picture: "61.webp",
     description: "ЛыЖи",
   },
   {
@@ -316,17 +316,17 @@ const CardsData = [
   },
   {
     id: 63,
-    picture: "63.jpg",
+    picture: "63.png",
     description: "ЛейКа",
   },
   {
     id: 64,
-    picture: "64.jpg",
+    picture: "64.png",
     description: "ЛуЧ",
   },
   {
     id: 65,
-    picture: "65.jpg",
+    picture: "65.png",
     description: "ЛуПа",
   },
   {
@@ -356,7 +356,7 @@ const CardsData = [
   },
   {
     id: 71,
-    picture: "71.png",
+    picture: "71.jpg",
     description: "СиГара",
   },
   {
@@ -366,12 +366,12 @@ const CardsData = [
   },
   {
     id: 73,
-    picture: "73.jpg",
+    picture: "73.png",
     description: "яЗыК",
   },
   {
     id: 74,
-    picture: "74.jpg",
+    picture: "74.png",
     description: "СаЧок",
   },
   {
@@ -381,12 +381,12 @@ const CardsData = [
   },
   {
     id: 76,
-    picture: "76.jpg",
+    picture: "76.png",
     description: "СоЛь",
   },
   {
     id: 77,
-    picture: "77.jpg",
+    picture: "77.png",
     description: "СоуС",
   },
   {
@@ -396,7 +396,7 @@ const CardsData = [
   },
   {
     id: 79,
-    picture: "79.png",
+    picture: "79.jpg",
     description: "СыР",
   },
   {
