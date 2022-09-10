@@ -47,10 +47,10 @@ const Pagintation = (props) => {
       <button
         onClick={handleButtonClick}
         data-min="80"
-        data-max="99"
+        data-max="100"
         className="pagination__button"
       >
-        80 - 99
+        80 - 100
       </button>
     </div>
   );
