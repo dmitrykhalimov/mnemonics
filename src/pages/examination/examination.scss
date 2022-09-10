@@ -6,7 +6,7 @@
 .examination__field {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(20, 100px);
+  grid-template-rows: repeat(20, 90px);
   flex-wrap: wrap;
   // align-items: flex-start;
   gap: 5px;
