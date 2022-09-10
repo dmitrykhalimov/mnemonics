@@ -1,6 +1,7 @@
 .table__container {
   max-width: 1000px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .table__field {
@@ -8,7 +9,6 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(20, 300px);
   flex-wrap: wrap;
-  // align-items: flex-start;
   gap: 5px;
 
   height: 100vh;

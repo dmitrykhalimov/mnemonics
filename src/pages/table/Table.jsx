@@ -16,10 +16,9 @@ const Table = () => {
 
   return (
     <>
-      <Navigation></Navigation>
+      <Navigation activeCategory="table"></Navigation>
       <section className="table">
         <div className="table__container">
-          <h1>Таблица карточек</h1>
           <Pagintation selectCardsRange={selectCardsRange}></Pagintation>
           <div className="table__field">
             {cards.map((cardData) => {

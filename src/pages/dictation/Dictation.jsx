@@ -27,7 +27,7 @@ const Dictation = () => {
 
   return (
     <>
-      <Navigation></Navigation>
+      <Navigation activeCategory="dictation"></Navigation>
       <section className="dictation">
         <DictationControls
           onChangeMinRange={handleChangeMinRange}
