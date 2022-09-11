@@ -39,7 +39,6 @@ const Card = (props) => {
 
   const toggleSide = () => {
     setCardClosed(!isCardClosed);
-    console.log(isCardClosed);
   };
 
   const showCard = () => {

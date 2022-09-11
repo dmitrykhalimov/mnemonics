@@ -9,6 +9,10 @@ const DictationField = (props) => {
     getRandomCard(minRange, maxRange)
   );
 
+  useEffect(() => {
+    nextCard();
+  }, [isNumberFirst]);
+
   const nextCard = () => {
     setCurrentCard(getRandomCard(minRange, maxRange));
   };

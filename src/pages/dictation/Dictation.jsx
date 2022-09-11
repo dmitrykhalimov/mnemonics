@@ -21,9 +21,7 @@ const Dictation = () => {
   };
 
   const changeDictationType = (toggleValue) => {
-    console.log(toggleValue === "numbers");
     setIsNumberFirst(toggleValue === "numbers");
-    // хз чего оно не ререндерится
   };
 
   return (

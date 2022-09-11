@@ -31,7 +31,6 @@ const CardMini = (props) => {
 
   const toggleSide = () => {
     setCardSide(!cardSide);
-    console.log(cardSide);
   };
 
   return (
