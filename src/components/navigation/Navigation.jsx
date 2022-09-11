@@ -4,7 +4,6 @@ import "./navigation.scss";
 
 const Navigation = (props) => {
   const { activeCategory } = props;
-  console.log(activeCategory === "table");
   return (
     <nav className="navigation">
       <div className="logo">Тренажёр</div>

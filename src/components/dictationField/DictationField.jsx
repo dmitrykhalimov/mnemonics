@@ -3,7 +3,6 @@ import "./dictationField.scss";
 import Card from "../card/Card";
 import { getRandomCard } from "../../core/core";
 
-
 const DictationField = (props) => {
   const { isNumberFirst, minRange, maxRange } = props;
   const [currentCard, setCurrentCard] = useState(

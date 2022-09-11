@@ -14,7 +14,7 @@ const DictationControls = (props) => {
 
   const handleChangeType = (evt) => {
     setSelectorType(evt.target.id);
-    changeDictationType(evt.target.id !== "numbers");
+    changeDictationType(evt.target.id);
   };
 
   const handleChangeMinRange = (evt) => {

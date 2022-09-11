@@ -8,7 +8,7 @@ const DEFALUT_MIN = 0;
 const DEFAULT_MAX = 19;
 
 const Dictation = () => {
-  const [isNumberFirst, setIsNumberFirst] = useState(false);
+  const [isNumberFirst, setIsNumberFirst] = useState(true);
   const [minRange, setMinRange] = useState(DEFALUT_MIN);
   const [maxRange, setMaxRange] = useState(DEFAULT_MAX);
 
@@ -20,8 +20,9 @@ const Dictation = () => {
     setMaxRange(Number(max));
   };
 
-  const changeDictationType = () => {
-    setIsNumberFirst(!isNumberFirst);
+  const changeDictationType = (toggleValue) => {
+    console.log(toggleValue === "numbers");
+    setIsNumberFirst(toggleValue === "numbers");
     // хз чего оно не ререндерится
   };
 

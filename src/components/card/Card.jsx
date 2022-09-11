@@ -7,9 +7,9 @@ const Card = (props) => {
     description,
     picture,
     isDictation = false,
-    isNumberFirst = false,
+    isNumberFirst = true,
   } = props;
-  const [cardSide, setCardSide] = useState(isNumberFirst);
+  const [isCardClosed, setCardClosed] = useState(true);
 
   const NumberSide = () => {
     return (
@@ -29,9 +29,35 @@ const Card = (props) => {
     );
   };
 
+  const ImageReverseSide = () => {
+    return (
+      <div className="card__inner card__inner--image">
+        <img src={`assets/${picture}`} alt={description} />
+      </div>
+    );
+  };
+
   const toggleSide = () => {
-    setCardSide(!cardSide);
-    console.log(cardSide);
+    setCardClosed(!isCardClosed);
+    console.log(isCardClosed);
+  };
+
+  const showCard = () => {
+    console.log(
+      "is number first",
+      isNumberFirst,
+      "is card closed",
+      isCardClosed
+    );
+    if (!isDictation) {
+      return isCardClosed ? <NumberSide /> : <ImageSide />;
+    }
+
+    if (isNumberFirst) {
+      return isCardClosed ? <NumberSide /> : <ImageSide />;
+    }
+
+    return isCardClosed ? <ImageReverseSide /> : <ImageSide />;
   };
 
   return (
@@ -39,7 +65,7 @@ const Card = (props) => {
       onClick={toggleSide}
       className={`card${isDictation ? " card--dictation" : ""}`}
     >
-      {cardSide ? <ImageSide /> : <NumberSide />}
+      {showCard()}
     </div>
   );
 };
