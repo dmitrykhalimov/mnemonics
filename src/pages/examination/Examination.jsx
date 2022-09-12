@@ -1,17 +1,11 @@
-import React, { useState } from "react";
-import Navigation from "../../components/navigation/Navigation";
-import Pagintation from "../../components/pagination/Pagintation";
+import React from "react";
 import "./examination.scss";
 
 import { getCardsRange } from "../../core/core";
 import CardMini from "../../components/cardMini/CardMini";
 
 const Table = () => {
-  const [cards, setCards] = useState(getCardsRange(0, 100));
-
-  const selectCardsRange = (minRange, maxRange) => {
-    setCards(getCardsRange(minRange, maxRange));
-  };
+  const cards = getCardsRange(0, 100);
 
   return (
     <>

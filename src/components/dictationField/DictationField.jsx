@@ -11,6 +11,7 @@ const DictationField = (props) => {
 
   useEffect(() => {
     nextCard();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isNumberFirst]);
 
   const nextCard = () => {

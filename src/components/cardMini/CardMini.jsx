@@ -6,7 +6,6 @@ const CardMini = (props) => {
     number,
     description,
     picture,
-    isDictation = false,
     isNumberFirst = false,
   } = props;
   const [cardSide, setCardSide] = useState(isNumberFirst);
